@@ -1,7 +1,8 @@
 # azure-practice-jda
 - These are practice questions from Azure Fundementals for my Anki App. 
 - These are my own personal study cards, there will be error and issues, kindly troubleshoot yourself if possible. 
-- You can submit a issue/request if you find any issues. Edit these decks as you wish as your personal deck.
+- You can submit a issue/request if you find any issues such as spelling error, duplicated, or wrong answer.
+- Edit these decks as you wish as your personal deck.
 
 ## Pre-requisites
 In order to use this deck you need to have:
