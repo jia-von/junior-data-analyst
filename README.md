@@ -34,9 +34,9 @@ For more information about importaing text files into Anki, refer to [Anki Manua
 | Deck Name | Id | Question | Answer | Explanation | Extra | Choices | Reversed Choices | Tag |
 
 ### Anki tag
-**practice-assessment**: Questions from [Azure Practice Assessment](https://learn.microsoft.com/en-us/certifications/exams/az-900/practice/assessment?assessmentId=23&assessment-type=practice)
-**iCertify**: Mock question from iCertify
-**mc-graw**: Mock questions from mc-graw
+- **practice-assessment**: Questions from [Azure Practice Assessment](https://learn.microsoft.com/en-us/certifications/exams/az-900/practice/assessment?assessmentId=23&assessment-type=practice)
+- **iCertify**: Mock question from iCertify
+- **mc-graw**: Mock questions from mc-graw
 
 ## References
 - [Exam AZ-900: Microsoft Azure Fundamentals](https://learn.microsoft.com/en-us/certifications/exams/az-900/)
