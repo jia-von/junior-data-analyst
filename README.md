@@ -21,22 +21,38 @@ In order to use this deck you need to have:
 For more information about importaing text files into Anki, refer to [Anki Manual: Importing](https://docs.ankiweb.net/importing.html) 
 
 ## TSV File
-### Header 
+### Deck Practice Assessment for Exam AZ-900: Microsoft Azure Fundementals
 ```
 #separator:tab
 #html:false
-#deck column:1
-#tags column:9
+#notetype column:1
+#deck column:2
+#tags column:10
 ```
-### Columns
-| 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9 |
-| --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| Deck Name | Id | Question | Answer | Explanation | Extra | Choices | Reversed Choices | Tag |
+#### Columns
+| 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9 | 10 |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| Note Type | Deck Name | Id | Question | Answer | Explanation | Extra | Choices | Reversed Choices | Tag |
 
-### Anki tag
+#### Anki tag
 - **practice-assessment**: Questions from [Azure Practice Assessment](https://learn.microsoft.com/en-us/certifications/exams/az-900/practice/assessment?assessmentId=23&assessment-type=practice)
 - **iCertify**: Mock question from iCertify
 - **mc-graw**: Mock questions from mc-graw
+
+### Exam Az-900: Microsoft Azure Fundmentals
+These are from JDA-Program Slides. Note Type: Basic
+```
+#separator:tab
+#html:true
+#notetype column:1
+#deck column:2
+#tags column:5
+``` 
+#### Columns
+| 1 | 2 | 3 | 4 | 5 |
+| --- | --- | --- | --- | --- |
+| Note Type | Deck Name | Front | Back | tags |
+
 - **2.1, 2.2, 2.3, etc..**: These tags refers to modules of Exam AZ-900: Microsoft Azure Fundamentals. Eg. 2.1: Azure Fundamentals: Describe Azure architecture and services --> Describe the core architectural components of Azure
 
 ## References
