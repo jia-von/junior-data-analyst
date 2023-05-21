@@ -35,3 +35,5 @@ For more information about importaing text files into Anki, refer to [Anki Manua
 
 ## References
 - [Exam AZ-900: Microsoft Azure Fundamentals](https://learn.microsoft.com/en-us/certifications/exams/az-900/)
+- [iCertify Training: Microsoft Accredited AZ-900® Certification Training](https://www.icertifytraining.com/az-900/)
+- [McGraws: Microsoft Certified Azure Fundamentals All-in-One Exam Guide (Exam AZ-900)](https://www.mheducation.com/highered/product/microsoft-certified-azure-fundamentals-all-one-exam-guide-exam-az-900-hyman/9781264268368.html)
