@@ -37,6 +37,7 @@ For more information about importaing text files into Anki, refer to [Anki Manua
 - **practice-assessment**: Questions from [Azure Practice Assessment](https://learn.microsoft.com/en-us/certifications/exams/az-900/practice/assessment?assessmentId=23&assessment-type=practice)
 - **iCertify**: Mock question from iCertify
 - **mc-graw**: Mock questions from mc-graw
+- **2.1, 2.2, 2.3, etc..**: These tags refers to modules of Exam AZ-900: Microsoft Azure Fundamentals. Eg. 2.1: Azure Fundamentals: Describe Azure architecture and services --> Describe the core architectural components of Azure
 
 ## References
 - [Exam AZ-900: Microsoft Azure Fundamentals](https://learn.microsoft.com/en-us/certifications/exams/az-900/)
