@@ -81,6 +81,8 @@ I have finally passed my Exam AZ-900: Microsoft Azure Fundamentals with a score 
 | Azure mobile app | manage azure resources via Android or iOS device | Stay connected to your Azure resources—anytime, anywhere |
 | Microsoft Cost Management | **Cost Management + Billing** dashboard functionality in the Azure portal; billing: **invoices**, cost management: **cost analysis, set cost alerts, create budgets** | Monitor, allocate, and optimize cloud costs with transparency, accuracy, and efficiency |
 | Microsoft Purview Compliance Manager | automatically assess and manage compliance across your multicloud environment. | Govern, protect, and manage your data estate |
+| Az PowerShell module | install locally on Windows, macOS, and Linux | Azure PowerShell is a set of cmdlets for managing Azure resources directly from PowerShell |
+| Azure Command-Line Interface (CLI) | cross-platform command-line **tool** | It allows the execution of commands through a terminal using interactive command-line prompts or a script |
 
 ## Migration
 | Product Name | Keywords | One-liner |
