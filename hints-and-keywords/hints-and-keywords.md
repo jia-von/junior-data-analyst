@@ -124,3 +124,4 @@ I have finally passed my Exam AZ-900: Microsoft Azure Fundamentals with a score 
 | Azure Bot Services | A conversational AI service | Create bots and connect them across channels |
 | Azure Cognitive Services | A pre-built AI service | Add cognitive capabilities to apps with APIs and AI services |
 | Azure Machine Learning | A custom AI service | Use an enterprise-grade service for the end-to-end machine learning lifecycle |
+
