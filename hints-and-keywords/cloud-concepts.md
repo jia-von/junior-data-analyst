@@ -3,7 +3,7 @@
 | --- | --- |
 | Scaling up/vertical scaling | capacity is increased within the resource, such as increasing processor or memory by resizing a virtual machine |
 | Scaling out/horizontal scaling | additional resource instances, such as adding other virtual machines or compute node/scale units |
-| Elasticity | he ability to shape the resources needed automatically, burst and scale to meet any peak in demand, and return to a normal operating baseline |
+| Elasticity | the ability to shape the resources needed automatically, burst and scale to meet any peak in demand, and return to a normal operating baseline |
 | Agility | deploying and configuring resources effectively and efficiently in a short space of time to meet any change in requirements or operational needs |
 | High availability and geo-distribution | operate within the required or mandated Service Level Agreement (SLA) |
 | Disaster recovery | set of initiatives designed to ensure that critical business systems will be protected, despite serious incidents, and recovered to an operational state within a defined period; this is achieved by failing over to systems that have been replicated in another region |
