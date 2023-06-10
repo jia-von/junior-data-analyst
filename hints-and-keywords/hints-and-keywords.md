@@ -28,6 +28,12 @@ I have finally passed my Exam AZ-900: Microsoft Azure Fundamentals with a score 
 | Azure Front Door | deliver real-time perfornace for **global apps** | Highly secure global application delivery |
 
 ## Databases
+| Product Name | Keywords | One-liner |
+| --- | --- | --- |
+| Azure Cosmos DB | **non-relational**, NoSQL database service, **high availability** | Build or modernize scalable, high-performance apps |
+| Azure Database for MySQL | Microsoft-hosted version of the open source MySQL relational database | Fully managed, scalable MySQL Database |
+| Azure Database for PostgreSQL | Microsoft-hosted version of the open source MySQL relational database | Fully managed, intelligent, and scalable PostgreSQL |
+| Azure SQL Managed Instance | **lift-and-shift**, fully managed, up-to-date platform | Modernize SQL Server applications with a managed, always-up-to-date SQL instance in the cloud |
 
 ## Security
 | Product Name | Keywords | One-liner |
@@ -56,7 +62,7 @@ I have finally passed my Exam AZ-900: Microsoft Azure Fundamentals with a score 
 ## Internet of Things
 | Product Name | Keywords | One-liner |
 | --- | --- | --- |
-| Azure IoT Central | Consume IoT services, SaaS, analyze data | Go from proof of concept to proof of value |
+| Azure IoT Central | **Real-Time Message Ingestion**, Consume IoT services, SaaS, analyze data | Go from proof of concept to proof of value |
 | Azure IoT Hub | Build your own IoT services, PaaS | Connect, monitor, and manage billions of IoT assets |
 | Azure Sphere | Secure IoT services, security/telemetry data | Create, connect, and maintain secured intelligent IoT devices from the edge to the cloud |
 
@@ -73,7 +79,8 @@ I have finally passed my Exam AZ-900: Microsoft Azure Fundamentals with a score 
 | Azure Service Health | planned maintainence, service incidents | Personalized guidance and support for when issues in Azure services affect you |
 | Azure Site Recovery | protects against complete region failure | Keep your business running with built-in disaster recovery service |
 | Azure mobile app | manage azure resources via Android or iOS device | Stay connected to your Azure resources—anytime, anywhere |
-
+| Microsoft Cost Management | **Cost Management + Billing** dashboard functionality in the Azure portal; billing: **invoices**, cost management: **cost analysis, set cost alerts, create budgets** | Monitor, allocate, and optimize cloud costs with transparency, accuracy, and efficiency |
+| Microsoft Purview Compliance Manager | automatically assess and manage compliance across your multicloud environment. | Govern, protect, and manage your data estate |
 
 ## Migration
 | Product Name | Keywords | One-liner |
@@ -84,7 +91,7 @@ I have finally passed my Exam AZ-900: Microsoft Azure Fundamentals with a score 
 ## Storage
 | Product Name | Keywords | One-liner |
 | --- | --- | --- |
-| Azure Files | PaaS, **SMB and NFS protocols**, Azure File shares, **azure file sync**  | Simple, secure and serverless enterprise-grade cloud file shares |
+| Azure Files | PaaS, **SMB and NFS protocols**, Azure File shares, **azure file sync**  | Simple, secure and serverless enterprise-grade clouFdatad file shares |
 | Archive Storage | Lowest-priced archive storage tier, data retrieval (**hydration**) costs, data is **offline**, requires **retrieval** | Industry leading price point for storing rarely accessed data |
 | Storage Accounts | resources that need to be created to store your data objects: storage containers, file share, queues, tables  | Durable, highly available, and massively scalable cloud storage |
 | Azure Disk Storage | IaaS, persistent disk for Azure VM | High-performance, highly durable block storage |
@@ -94,10 +101,20 @@ I have finally passed my Exam AZ-900: Microsoft Azure Fundamentals with a score 
 | Azure Blob Storage | **unstructured** data, **REST API**, image or video data, **backup** and **disaster recovery** | Massively scalable and secure object storage |
 
 ## Developer tool
+| Product Name | Keywords | One-liner |
+| --- | --- | --- |
+| Azure DevTest Labs | an environment for automatically creating lab resources from pre-configured base items or ARM templates, all while utilizing the least administrative resources and effort | Quickly create environments using reusable templates and artifacts |
+| Azure Repos | code repository | Get unlimited, cloud-hosted private Git repos for your project |
+| Azure Boards | Track work with **Kanban boards**, backlogs, team dashboards, and custom reporting | Plan, track, and discuss work across your teams |
+
 ## Analytics
 | Product Name | Keywords | One-liner |
 | --- | --- | --- |
-| Event Hubs | real-time data ingestion service, data pipelines, **millions of events** | Receive telemetry from millions of devices |
+| Event Hubs | **real-time data ingestion service**, data pipelines, **millions of events** | Receive telemetry from millions of devices |
+| Azure Synapse Analytics | insight across **data warehouses** and **big data systems**, **Apache Spark** for big data and **Data Explorer** for logs and metrics | Limitless analytics with unmatched time to insight |
+| Azure Data Explorer | real-time analysis on large volumes of data streaming from applications, websites, IoT devices, **log and time series** analytics | Fast and highly scalable data exploration service |
+| HDInsight | **open source**, **Batch Processing**, processing and analyzing big **data** | Provision cloud Hadoop, Spark, R Server, HBase, and Storm clusters |
+| Azure Databricks | **Batch Processing** | Design **AI** with Apache Spark™-based analytics  |
 
 ## AI + machine learning
 | Product Name | Keywords | One-liner |
