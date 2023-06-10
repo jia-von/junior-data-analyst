@@ -9,6 +9,12 @@ I have finally passed my Exam AZ-900: Microsoft Azure Fundamentals with a score 
 | Platform as a Service (PaaS) | provides ready-to-use environment, usually azure product with fancy names | Azure App Service, Azure SQL Database, Cosmos DB, Azure Files, Azure Active Directory Domain Services |
 | PaaS Serverless | serverless, business logic priority | Azure Functions, Azure Logic App |
 
+## Compute
+| Product Name | Keywords | One-liner |
+| --- | --- | --- |
+| Azure Virtual Desktop | **virtual desktop** service to access your desktop from anywhere, PaaS | Enable a secure, remote desktop experience from anywhere |
+| Azure Dedicated Host | full **control** and strict **compliance**, physical virtualization hosts dedicated to individual customers | A dedicated physical server to host your Azure VMs for Windows and Linux |
+
 ## Networking
 | Product Name | Keywords | One-liner |
 | --- | --- | --- |
@@ -16,6 +22,10 @@ I have finally passed my Exam AZ-900: Microsoft Azure Fundamentals with a score 
 | VPN Gateway | encrypted traffic, point-to-site, site-to-site | Establish secure, cross-premises connectivity |
 | Content Delivery Network | deliver videos and streaming | Fast, reliable content delivery network with global reach |
 | Azure Arc |  simplifies governance and management by delivering a consistent multicloud and on-premises management platform | Secure, develop, and operate infrastructure, apps, and Azure services anywhere |
+| Azure Traffic Manager | DNS-based traffic **load balancer**, distribute traffic to your public facing applications, for **global apps** | Route incoming traffic for high performance and availability |
+| Azure Load Balancer | works with **network performance**, balance **traffic** within VMs, **global and regional apps** | Network-layer load balancer |
+| Azure Application Gateway | works with **web front ends**, **regional apps** | Application delivery controller as a service |
+| Azure Front Door | deliver real-time perfornace for **global apps** | Highly secure global application delivery |
 
 ## Databases
 
@@ -24,9 +34,9 @@ I have finally passed my Exam AZ-900: Microsoft Azure Fundamentals with a score 
 | --- | --- | --- |
 | Azure Information Protection | encrypt documents and emails | Better protect your sensitive information—anytime, anywhere |
 | Azure DDoS Protection | threats and attacks, network layer (OSI), perimeter layer (DiD) | Protect your Azure resources from distributed denial-of-service (DDoS) attacks |
-| Microsoft Sentinel | **sentinel** definition: a soldier or guard whose job is to sant and keep watch, SIEM, SOAR, AI based security, response to threats just like a guard | Cloud-native SIEM and intelligent security analytics |  
+| Microsoft Sentinel | **sentinel** definition: a soldier or guard whose job is to stand and keep watch, **SIEM**, **SOAR**, AI based security, response to threats just like a guard | Cloud-native SIEM and intelligent security analytics |  
 | Azure Firewall | applied at **VNet level**, control traffic flow, network address translation (NAT), **filter** traffic across many VNets | Protect your Azure Virtual Network resources with cloud-native network security |
-| Network Security Group (NSG) | allow or deny, connect using port, inbound/outbound rules, associated with VM **network interface controller (NIC)** and a **subnet** but not a VNet |  |
+| Network Security Group (NSG) | **allow or deny**, connect using port, inbound/outbound rules, associated with VM **network interface controller (NIC)** and a **subnet** but not a VNet |  |
 | Azure Key Vault | vault = to safekeep, secrets, keys | Safeguard and maintain control of keys and other secrets |
 | Azure Active Directory (Azure AD) | providing authentication and authorization for users, MFA, conditional access, SSO | Synchronize on-premises directories and enable single sign-on |
 | Microsoft Defender for Cloud | provides security policy, compliance manager, sercure score, security alerts, just-in-time (JIT) network access | Protect your multi-cloud and hybrid environments |
@@ -35,8 +45,8 @@ I have finally passed my Exam AZ-900: Microsoft Azure Fundamentals with a score 
 ## Containers
 | Product Name | Keywords | One-liner |
 | --- | --- | --- |
-| Azure Kubernetes Service (AKS) | orchestration service for managing containers at scale | Deploy and scale containers on managed Kubernetes |
-| Azure Container Instances (ACI) | create a single instance container and start using it as you would a VM | Launch containers with hypervisor isolation |
+| Azure Kubernetes Service (AKS) | **orchestration** service for managing containers at scale | Deploy and scale containers on managed Kubernetes |
+| Azure Container Instances (ACI) | create a **single instance** container and start using it as you would a VM | Launch containers with hypervisor isolation |
 | Azure Functions | serverless, code engine | Execute event-driven serverless code functions with an end-to-end development experience |
 | Azure Logic Apps | serverless, workflow engine | Automate the access and use of data across clouds |
 | Azure App Service | A Microsoft-managed application hosting service | Quickly create powerful cloud apps for web and mobile |
@@ -62,10 +72,11 @@ I have finally passed my Exam AZ-900: Microsoft Azure Fundamentals with a score 
 | Azure Site Recovery | protects against complete region failure | Keep your business running with built-in disaster recovery service |
 | Azure mobile app | manage azure resources via Android or iOS device | Stay connected to your Azure resources—anytime, anywhere |
 
+
 ## Migration
 | Product Name | Keywords | One-liner |
 | --- | --- | --- |
-| Azure Data Box | migrate data **physically** using disks and **shipping** it | Appliances and solutions for data transfer to Azure and edge compute |
+| Azure Data Box | migrate data **physically** using disks and **shipping** it in a **box** | Appliances and solutions for data transfer to Azure and edge compute |
 
 ## Storage
 | Product Name | Keywords | One-liner |
@@ -77,3 +88,7 @@ I have finally passed my Exam AZ-900: Microsoft Azure Fundamentals with a score 
 | Azure Data Lake Storage | Azure HDInsight, data lake analytics  | Scalable, secure data lake for high-performance analytics |
 
 ## Developer tool
+## Analytics
+| Product Name | Keywords | One-liner |
+| --- | --- | --- |
+| Event Hubs | real-time data ingestion service, data pipelines, **millions of events** | Receive telemetry from millions of devices |
