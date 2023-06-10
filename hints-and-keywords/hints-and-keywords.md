@@ -65,4 +65,15 @@ I have finally passed my Exam AZ-900: Microsoft Azure Fundamentals with a score 
 ## Migration
 | Product Name | Keywords | One-liner |
 | --- | --- | --- |
-| Azure Data Box | migrate data p**physically** using disks and **shipping** it | Appliances and solutions for data transfer to Azure and edge compute |
+| Azure Data Box | migrate data **physically** using disks and **shipping** it | Appliances and solutions for data transfer to Azure and edge compute |
+
+## Storage
+| Product Name | Keywords | One-liner |
+| --- | --- | --- |
+| Azure Files | PaaS,  | Simple, secure and serverless enterprise-grade cloud file shares, **SMB and NFS protocols**, Azure File shares |
+| Archive Storage | Lowest-priced archive storage tier, data retrieval (**hydration**) costs, data is **offline**, requires **retrieval** | Industry leading price point for storing rarely accessed data |
+| Storage Accounts | resources that need to be created to store your data objects: storage containers, file share, queues, tables  | Durable, highly available, and massively scalable cloud storage |
+| Azure Disk Storage | IaaS, persistent disk for Azure VM | High-performance, highly durable block storage |
+| Azure Data Lake Storage | Azure HDInsight, data lake analytics  | Scalable, secure data lake for high-performance analytics |
+
+## Developer tool
