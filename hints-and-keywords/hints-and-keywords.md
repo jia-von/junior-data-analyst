@@ -39,8 +39,10 @@ I have finally passed my Exam AZ-900: Microsoft Azure Fundamentals with a score 
 | Network Security Group (NSG) | **allow or deny**, connect using port, inbound/outbound rules, associated with VM **network interface controller (NIC)** and a **subnet** but not a VNet |  |
 | Azure Key Vault | vault = to safekeep, secrets, keys | Safeguard and maintain control of keys and other secrets |
 | Azure Active Directory (Azure AD) | providing authentication and authorization for users, MFA, conditional access, SSO | Synchronize on-premises directories and enable single sign-on |
+| Azure Active Directory Domain Services | run legacy applications in the cloud that can't use modern authentication | Manage your **domain controllers** in the cloud |
 | Microsoft Defender for Cloud | provides security policy, compliance manager, sercure score, security alerts, just-in-time (JIT) network access | Protect your multi-cloud and hybrid environments |
 | Azure Front Door | application delivery network (ADN) service, operates at the geographic layer and is not regional | Modern cloud CDN that delivers optimized experiences to your users anywhere |
+| Azure Active Directory External Identities |  you can share your resources and define how your internal users can access external organizations | Consumer identity and access management in the cloud |
 
 ## Containers
 | Product Name | Keywords | One-liner |
@@ -77,18 +79,29 @@ I have finally passed my Exam AZ-900: Microsoft Azure Fundamentals with a score 
 | Product Name | Keywords | One-liner |
 | --- | --- | --- |
 | Azure Data Box | migrate data **physically** using disks and **shipping** it in a **box** | Appliances and solutions for data transfer to Azure and edge compute |
+| Azure Migrate | Unified migration platform/hub, Assessment and migration tools, provide tools  | Simplify migration and modernization with a unified platform |
 
 ## Storage
 | Product Name | Keywords | One-liner |
 | --- | --- | --- |
-| Azure Files | PaaS, **SMB and NFS protocols**, Azure File shares  | Simple, secure and serverless enterprise-grade cloud file shares |
+| Azure Files | PaaS, **SMB and NFS protocols**, Azure File shares, **azure file sync**  | Simple, secure and serverless enterprise-grade cloud file shares |
 | Archive Storage | Lowest-priced archive storage tier, data retrieval (**hydration**) costs, data is **offline**, requires **retrieval** | Industry leading price point for storing rarely accessed data |
 | Storage Accounts | resources that need to be created to store your data objects: storage containers, file share, queues, tables  | Durable, highly available, and massively scalable cloud storage |
 | Azure Disk Storage | IaaS, persistent disk for Azure VM | High-performance, highly durable block storage |
 | Azure Data Lake Storage | Azure HDInsight, data lake analytics  | Scalable, secure data lake for high-performance analytics |
+| Azure Storage Explorer | graphical interface to manage files and blobs | View and interact with Azure Storage resources |
+| Queue Storage | service for storing large numbers of **messages** | Effectively scale apps according to traffic |
+| Azure Blob Storage | **unstructured** data, **REST API**, image or video data, **backup** and **disaster recovery** | Massively scalable and secure object storage |
 
 ## Developer tool
 ## Analytics
 | Product Name | Keywords | One-liner |
 | --- | --- | --- |
 | Event Hubs | real-time data ingestion service, data pipelines, **millions of events** | Receive telemetry from millions of devices |
+
+## AI + machine learning
+| Product Name | Keywords | One-liner |
+| --- | --- | --- |
+| Azure Bot Services | A conversational AI service | Create bots and connect them across channels |
+| Azure Cognitive Services | A pre-built AI service | Add cognitive capabilities to apps with APIs and AI services |
+| Azure Machine Learning | A custom AI service | Use an enterprise-grade service for the end-to-end machine learning lifecycle |
