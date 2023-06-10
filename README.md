@@ -55,6 +55,9 @@ These are from JDA-Program Slides. Note Type: Basic
 
 - **2.1, 2.2, 2.3, etc..**: These tags refers to modules of Exam AZ-900: Microsoft Azure Fundamentals. Eg. 2.1: Azure Fundamentals: Describe Azure architecture and services --> Describe the core architectural components of Azure
 
+## Azure hints-and-keywords document
+I have now included [hints and keywords document](hints-and-keywords/hints-and-keywords.md) which I have used to help remember Azure services. Feel free to refer to it. 
+
 ## References
 - [Exam AZ-900: Microsoft Azure Fundamentals](https://learn.microsoft.com/en-us/certifications/exams/az-900/)
 - [iCertify Training: Microsoft Accredited AZ-900® Certification Training](https://www.icertifytraining.com/az-900/)
