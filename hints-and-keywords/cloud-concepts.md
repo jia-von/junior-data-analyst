@@ -22,4 +22,4 @@
 | Availability Sets | Protection within a data center |
 | Availability Zones | Protection within a region |
 | Region Pairs | protection across a region | 
-| VM scale sets | IaaS resource service with built-in autoscaling features for VM-based workloads, dentical VMs can be created through VM scale sets, which provides the automatic scaling functionality expected from a cloud model |
+| VM scale sets | IaaS resource service with built-in autoscaling features for VM-based workloads, identical VMs can be created through VM scale sets, which provides the automatic scaling functionality expected from a cloud model |
