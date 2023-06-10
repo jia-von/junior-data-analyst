@@ -70,7 +70,7 @@ I have finally passed my Exam AZ-900: Microsoft Azure Fundamentals with a score 
 ## Storage
 | Product Name | Keywords | One-liner |
 | --- | --- | --- |
-| Azure Files | PaaS,  | Simple, secure and serverless enterprise-grade cloud file shares, **SMB and NFS protocols**, Azure File shares |
+| Azure Files | PaaS, **SMB and NFS protocols**, Azure File shares  | Simple, secure and serverless enterprise-grade cloud file shares |
 | Archive Storage | Lowest-priced archive storage tier, data retrieval (**hydration**) costs, data is **offline**, requires **retrieval** | Industry leading price point for storing rarely accessed data |
 | Storage Accounts | resources that need to be created to store your data objects: storage containers, file share, queues, tables  | Durable, highly available, and massively scalable cloud storage |
 | Azure Disk Storage | IaaS, persistent disk for Azure VM | High-performance, highly durable block storage |
