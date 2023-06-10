@@ -9,20 +9,15 @@ I have finally passed my Exam AZ-900: Microsoft Azure Fundamentals with a score 
 | Platform as a Service (PaaS) | provides ready-to-use environment, usually azure product with fancy names | Azure App Service, Azure SQL Database, Cosmos DB, Azure Files, Azure Active Directory Domain Services |
 | PaaS Serverless | serverless, business logic priority | Azure Functions, Azure Logic App |
 
-## Azure Product Service
+## Networking
 | Product Name | Keywords | One-liner |
 | --- | --- | --- |
 | Azure ExpressRoute | traffic does not route (traverse) the internet | Experience a fast, reliable, and **private** connection to Azure |
 | VPN Gateway | encrypted traffic, point-to-site, site-to-site | Establish secure, cross-premises connectivity |
-| Microsoft Defender for Cloud | provides security policy, compliance manager, sercure score, security alerts, just-in-time (JIT) network access | Protect your multi-cloud and hybrid environments |
 | Content Delivery Network | deliver videos and streaming | Fast, reliable content delivery network with global reach |
-| Azure Service Health | planned maintainence, service incidents | Personalized guidance and support for when issues in Azure services affect you |
-| Azure Policy | consistent resource governance, Controls what can be done (regardless of the user), resource focused | Implement corporate governance and standards at scale |
 | Azure Arc |  simplifies governance and management by delivering a consistent multicloud and on-premises management platform | Secure, develop, and operate infrastructure, apps, and Azure services anywhere |
 
 ## Databases
-| Product Name | Keywords | One-liner |
-| --- | --- | --- |
 
 ## Security
 | Product Name | Keywords | One-liner |
@@ -34,6 +29,8 @@ I have finally passed my Exam AZ-900: Microsoft Azure Fundamentals with a score 
 | Network Security Group (NSG) | allow or deny, connect using port, inbound/outbound rules, associated with VM **network interface controller (NIC)** and a **subnet** but not a VNet |  |
 | Azure Key Vault | vault = to safekeep, secrets, keys | Safeguard and maintain control of keys and other secrets |
 | Azure Active Directory (Azure AD) | providing authentication and authorization for users, MFA, conditional access, SSO | Synchronize on-premises directories and enable single sign-on |
+| Microsoft Defender for Cloud | provides security policy, compliance manager, sercure score, security alerts, just-in-time (JIT) network access | Protect your multi-cloud and hybrid environments |
+| Azure Front Door | application delivery network (ADN) service, operates at the geographic layer and is not regional | Modern cloud CDN that delivers optimized experiences to your users anywhere |
 
 ## Containers
 | Product Name | Keywords | One-liner |
@@ -42,6 +39,7 @@ I have finally passed my Exam AZ-900: Microsoft Azure Fundamentals with a score 
 | Azure Container Instances (ACI) | create a single instance container and start using it as you would a VM | Launch containers with hypervisor isolation |
 | Azure Functions | serverless, code engine | Execute event-driven serverless code functions with an end-to-end development experience |
 | Azure Logic Apps | serverless, workflow engine | Automate the access and use of data across clouds |
+| Azure App Service | A Microsoft-managed application hosting service | Quickly create powerful cloud apps for web and mobile |
 
 ## Internet of Things
 | Product Name | Keywords | One-liner |
@@ -51,3 +49,20 @@ I have finally passed my Exam AZ-900: Microsoft Azure Fundamentals with a score 
 | Azure Sphere | Secure IoT services, security/telemetry data | Create, connect, and maintain secured intelligent IoT devices from the edge to the cloud |
 
 ## Management and governance
+| Product Name | Keywords | One-liner |
+| --- | --- | --- |
+| Azure Advisor | best practices recommendations | Your personalized Azure best practices recommendation engine |
+| Azure Policy | consistent resource governance, Controls what can be done (regardless of the user), resource focused | Implement corporate governance and standards at scale |
+| Azure Resource Manager templates | JSON, infrastructure-as-code, template | Deliver infrastructure as code for all your Azure resources using Resource Manager |
+| Azure Blueprints | containers that made up of artifaces: Azure Services, Azure Policies, ARM Templates, RBAC, a set of resource group  | Enabling quick, repeatable creation of governed environments |
+| Cloud Shell | browser based shell, accessed via azure portal | Streamline Azure administration with a browser-based shell |
+| Microsoft Azure portal | graphical user interface, browser based | Build, manage, and monitor all Azure products in a single, unified console |
+| Azure Monitor | logs, logs analytics, metrics | Full observability into your applications, infrastructure, and network |
+| Azure Service Health | planned maintainence, service incidents | Personalized guidance and support for when issues in Azure services affect you |
+| Azure Site Recovery | protects against complete region failure | Keep your business running with built-in disaster recovery service |
+| Azure mobile app | manage azure resources via Android or iOS device | Stay connected to your Azure resources—anytime, anywhere |
+
+## Migration
+| Product Name | Keywords | One-liner |
+| --- | --- | --- |
+| Azure Data Box | migrate data p**physically** using disks and **shipping** it | Appliances and solutions for data transfer to Azure and edge compute |
