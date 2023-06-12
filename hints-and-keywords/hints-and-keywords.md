@@ -75,7 +75,7 @@ I have finally passed my Exam AZ-900: Microsoft Azure Fundamentals with a score 
 | Product Name | Keywords | One-liner |
 | --- | --- | --- |
 | Azure IoT Central | **Real-Time Message Ingestion**, Consume IoT services, SaaS, analyze data | Go from proof of concept to proof of value |
-| Azure IoT Hub | Build your own IoT services, PaaS | Connect, monitor, and manage billions of IoT assets |
+| Azure IoT Hub | Build your own IoT services, PaaS,**bidirectional** | Connect, monitor, and manage billions of IoT assets |
 | Azure Sphere | Secure IoT services, security/telemetry data | Create, connect, and maintain secured intelligent IoT devices from the edge to the cloud |
 
 ## Management and governance
