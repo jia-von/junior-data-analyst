@@ -43,7 +43,7 @@ I have finally passed my Exam AZ-900: Microsoft Azure Fundamentals with a score 
 | --- | --- | --- |
 | Azure Cosmos DB | **non-relational**, NoSQL database service, **high availability** | Build or modernize scalable, high-performance apps |
 | Azure Database for MySQL | Microsoft-hosted version of the open source MySQL relational database | Fully managed, scalable MySQL Database |
-| Azure Database for PostgreSQL | Microsoft-hosted version of the open source MySQL relational database | Fully managed, intelligent, and scalable PostgreSQL |
+| Azure Database for PostgreSQL | Microsoft-hosted version of the open source PostgreSQL relational database | Fully managed, intelligent, and scalable PostgreSQL |
 | Azure SQL Managed Instance | **lift-and-shift**, fully managed, up-to-date platform | Modernize SQL Server applications with a managed, always-up-to-date SQL instance in the cloud |
 
 ## Security
