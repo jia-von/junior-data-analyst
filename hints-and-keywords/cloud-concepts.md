@@ -1,13 +1,13 @@
 # Cloud Concepts Keywords
-| Concepts | Description |
-| --- | --- |
-| Scaling up/vertical scaling | capacity is increased within the resource, such as increasing processor or memory by resizing a virtual machine |
-| Scaling out/horizontal scaling | additional resource instances, such as adding other virtual machines or compute node/scale units |
-| Elasticity | the ability to shape the resources needed automatically, burst and scale to meet any peak in demand, and return to a normal operating baseline |
-| Agility | deploying and configuring resources effectively and efficiently in a short space of time to meet any change in requirements or operational needs |
-| High availability and geo-distribution | operate within the required or mandated Service Level Agreement (SLA) |
-| Disaster recovery | set of initiatives designed to ensure that critical business systems will be protected, despite serious incidents, and recovered to an operational state within a defined period; this is achieved by failing over to systems that have been replicated in another region |
-| Scalability | ability of a system to handle increased loads while still meeting availability goals |
+| Concepts | Description | [Microsoft Cloud Computing Dictionary](https://azure.microsoft.com/en-ca/resources/cloud-computing-dictionary/) |
+| --- | --- | --- |
+| Scaling up/vertical scaling | capacity is increased within the resource, such as increasing processor or memory by resizing a virtual machine | Vertical scaling (scaling up) lets you increase or decrease computing power or databases as needed. |
+| Scaling out/horizontal scaling | additional resource instances, such as adding other virtual machines or compute node/scale units | Horizontal scaling (scaling out) entails adding more databases or dividing a large database into smaller nodes, using a data partitioning approach called sharding |
+| Elasticity | the ability to shape the resources needed automatically, burst and scale to meet any peak in demand, and return to a normal operating baseline | The ability to dynamically provision and de-provision computer processing, memory, and storage resources to meet changing demands without worrying about capacity planning and engineering for peak usage. [Learn more](https://azure.microsoft.com/en-ca/resources/cloud-computing-dictionary/what-is-elastic-computing/). | 
+| Agility | deploying and configuring resources effectively and efficiently in a short space of time to meet any change in requirements or operational needs |  |
+| High availability and geo-distribution | operate within the required or mandated Service Level Agreement (SLA) | ![sla-ha-diagram](https://learn.microsoft.com/en-us/azure/architecture/high-availability/images/high-availability-004.png) |
+| Disaster recovery | set of initiatives designed to ensure that critical business systems will be protected, despite serious incidents, and recovered to an operational state within a defined period; this is achieved by failing over to systems that have been replicated in another region |  |
+| Scalability | ability of a system to handle increased loads while still meeting availability goals |  |
 
 ## Comparison
 | Concepts | Description |
@@ -17,15 +17,12 @@
 | Backup | When data is corrupted, deleted, lost, or irretrievable (ransomware), you can restore the instance from another copy of the system |
 
 ## Availability Component
-| Concepts | Description |
-| --- | --- |
-| Availability Sets | Protection within a data centre |
-| Availability Zones | Protection within a region; one or more data centres |
-| Region Pairs | protection across a region; pairs are located 300 miles or more apart where possible | 
-| VM scale sets | IaaS resource service with built-in autoscaling features for VM-based workloads, identical VMs can be created through VM scale sets, which provides the automatic scaling functionality expected from a cloud model |
-
-## Availbility Zone
-![availability-zone-image](https://learn.microsoft.com/en-us/azure/reliability/media/availability-zones.png)
+| Concepts | Description | Figure |
+| --- | --- | --- |
+| [Availability Sets](https://learn.microsoft.com/en-us/azure/virtual-machines/availability-set-overview) | Protection within a data centre | ![availability-set-image](https://learn.microsoft.com/en-us/azure/virtual-machines/media/virtual-machines-common-manage-availability/md-fd-updated.png) |
+| [Availability Zones](https://learn.microsoft.com/en-us/azure/reliability/availability-zones-overview) | Protection within a region; one or more data centres | ![availability-zone-image](https://learn.microsoft.com/en-us/azure/reliability/media/availability-zones.png) |
+| [Region Pairs](https://learn.microsoft.com/en-us/azure/reliability/cross-region-replication-azure) | protection across a region; pairs are located 300 miles or more apart where possible | ![region-pair-image](https://learn.microsoft.com/en-us/azure/reliability/media/cross-region-replication.png) |
+| VM scale sets | IaaS resource service with built-in autoscaling features for VM-based workloads, identical VMs can be created through VM scale sets, which provides the automatic scaling functionality expected from a cloud model |  |
 
 # Types of Clouds
 | Type | Description | Analogy |

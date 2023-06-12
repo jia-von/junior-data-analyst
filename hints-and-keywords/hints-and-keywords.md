@@ -30,7 +30,8 @@ I have finally passed my Exam AZ-900: Microsoft Azure Fundamentals with a score 
 | Azure Virtual Network Manager | a central management service for your virtual network resources | Centrally manage virtual networks in Azure from a single pane of glass |
 
 ### Virtual private network (VPN)
-| Product Name | Description |
+ A [virtual private network](https://azure.microsoft.com/en-ca/resources/cloud-computing-dictionary/what-is-vpn/) that establishes a connection between your computer and a remote server owned by a VPN provider. This connection creates a point-to-point tunnel that encrypts your personal data, masks your IP address, and lets you get around website blocks and firewalls.
+| Terms | Description |
 | --- | --- |
 | **VNet** | A VNet can only have one VPN gateway; the VPN gateway is a resource associated with only one VNet |
 | **Gateway subnet** | A dedicated subnet named GatewaySubnet is created within the VNet |
@@ -94,6 +95,13 @@ I have finally passed my Exam AZ-900: Microsoft Azure Fundamentals with a score 
 | Microsoft Purview Compliance Manager | automatically assess and manage compliance across your multicloud environment. | Govern, protect, and manage your data estate |
 | Az PowerShell module | install locally on Windows, macOS, and Linux | Azure PowerShell is a set of cmdlets for managing Azure resources directly from PowerShell |
 | Azure Command-Line Interface (CLI) | cross-platform command-line **tool** | It allows the execution of commands through a terminal using interactive command-line prompts or a script |
+
+### Management Examples
+| Tool | Description | Image |
+| --- | --- | --- |
+| PowerShell access via [Azure Cloud Shell](https://learn.microsoft.com/en-us/azure/cloud-shell/overview) | Azure Cloud Shell is an interactive, authenticated, browser-accessible terminal for managing Azure resources | ![powershell-cloud-shell](https://techcommunity.microsoft.com/t5/image/serverpage/image-id/116255i0D3FFCA4D312247A/image-size/large?v=v2&px=999) |
+| [PowerShell command line interface](https://learn.microsoft.com/en-us/training/modules/describe-core-architectural-components-of-azure/4-exercise-explore-learn-sandbox) (CLI) | manage your Azure environment using PowerShell commands | ![azure-cloud-shell-powershell](https://learn.microsoft.com/en-us/training/wwl-azure/describe-core-architectural-components-of-azure/media/sandbox-powershell-11569b2c.png) |
+| [Bash command](https://learn.microsoft.com/en-us/training/modules/describe-core-architectural-components-of-azure/4-exercise-explore-learn-sandbox) instead of PowerShell | you can use BASH command instead by shifting to the BASH CLI. | ![azure-bash-command](https://learn.microsoft.com/en-us/training/wwl-azure/describe-core-architectural-components-of-azure/media/sandbox-bash-363cf104.png) |
 
 ## Migration
 | Product Name | Keywords | One-liner |
