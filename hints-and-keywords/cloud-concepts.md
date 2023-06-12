@@ -23,3 +23,11 @@
 | Availability Zones | Protection within a region |
 | Region Pairs | protection across a region | 
 | VM scale sets | IaaS resource service with built-in autoscaling features for VM-based workloads, identical VMs can be created through VM scale sets, which provides the automatic scaling functionality expected from a cloud model |
+
+# Types of Clouds
+| Type | Description | Analogy |
+| --- | --- | --- |
+| Public cloud | a *shared entity (multi-tenant)* computing model. Hardware and resources such as compute, storage, and networking are owned by the cloud provider and shared with other tenants on the platform | *an apartment block*, where you are a tenant that shares the building with other tenants; you pay rent to a landlord for your apartment |
+| Private cloud | a *dedicated entity (single-tenant)* computing model. Hardware and resources such as compute, storage, and networking are dedicated to your organization use only | a house as opposed to an apartment block; you are the single tenant, and you do not share the building with any other tenants. You either own the building or you rent the property and pay a landlord |
+| Hybrid cloud | a combination of a *shared entity (multi-tenant)* computing model and a *dedicated entity (single-tenant)* computing model | Some computing resources you choose to have running in your private cloud environment and some resources you choose to have running in a public cloud environment based on your needs |
+| Azure Dedicated Host |  provides physical virtualization hosts dedicated to individual customers to host their Azure VMs for Windows and Linux workloads | this means that the building and its contents are yours and that you are not sharing with anybody else. This is not a hotel room—this is a house, a single-tenancy occupied building—and each room (or VM) is yours |
