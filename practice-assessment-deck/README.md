@@ -43,7 +43,10 @@ For more information about importaing text files into Anki, refer to [Anki Manua
 - **azure-part-1**, **azure-part-2**, **azure-part-3**: mock provided by JDA
 - **exam-question-dump-5**: Provided by [PUPUWEB](https://pupuweb.com/microsoft-azure-fundamentals-az900-actual-exam-question-answer-dumps-5/)
 
-## References
+## References/Credits
 - [Exam AZ-900: Microsoft Azure Fundamentals](https://learn.microsoft.com/en-us/certifications/exams/az-900/)
 - [iCertify Training: Microsoft Accredited AZ-900® Certification Training](https://www.icertifytraining.com/az-900/)
 - [McGraws: Microsoft Certified Azure Fundamentals All-in-One Exam Guide (Exam AZ-900)](https://www.mheducation.com/highered/product/microsoft-certified-azure-fundamentals-all-one-exam-guide-exam-az-900-hyman/9781264268368.html)
+- [Microsoft Azure Fundamentals Certification and Beyond: Simplified cloud concepts and core Azure fundamentals for absolute beginners to pass the AZ-900 exam](https://a.co/d/eHsuRr5)
+- [AZ-900 Microsoft Azure Fundamentals Exam Questions and Answers](https://pupuweb.com/microsoft-azure-fundamentals-az900-actual-exam-question-answer-dumps/)
+- [Exam Topics: Microsoft AZ-900 Exam](https://www.examtopics.com/exams/microsoft/az-900/) 

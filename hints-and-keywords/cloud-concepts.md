@@ -24,6 +24,9 @@
 | Region Pairs | protection across a region | 
 | VM scale sets | IaaS resource service with built-in autoscaling features for VM-based workloads, identical VMs can be created through VM scale sets, which provides the automatic scaling functionality expected from a cloud model |
 
+## Availbility Zone
+![availability-zone-image](https://learn.microsoft.com/en-us/azure/reliability/media/availability-zones.png)
+
 # Types of Clouds
 | Type | Description | Analogy |
 | --- | --- | --- |
