@@ -1,4 +1,4 @@
-# azure-practice-jda
+# Instructions
 - These are practice questions from Azure Fundementals for my Anki App. 
 - These are my own personal study cards, there will be error and issues, kindly troubleshoot yourself if possible. 
 - You can submit a issue/request if you find any issues such as spelling error, duplicated, or wrong answer.
