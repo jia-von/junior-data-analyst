@@ -32,7 +32,7 @@
 | Hybrid cloud | a combination of a *shared entity (multi-tenant)* computing model and a *dedicated entity (single-tenant)* computing model | Some computing resources you choose to have running in your private cloud environment and some resources you choose to have running in a public cloud environment based on your needs |
 | Azure Dedicated Host |  provides physical virtualization hosts dedicated to individual customers to host their Azure VMs for Windows and Linux workloads | this means that the building and its contents are yours and that you are not sharing with anybody else. This is not a hotel room—this is a house, a single-tenancy occupied building—and each room (or VM) is yours |
 
-# Microsoft Cloud Computing Dictionary (Direct Copy but all in one place is nicer...)
+# Microsoft Cloud Computing Dictionary (A direct copy but all in one place is nicer...)
 I found this site while browsing Microsoft Resources but I wish Microsoft would have promote it better. Anyways, these are terms that you will most likely encounter in AZ-900 in the Azure context. Click [cloud computing terms](https://azure.microsoft.com/en-ca/resources/cloud-computing-dictionary/) to access the source website. 
 | Term | Description |
 | --- | --- |
