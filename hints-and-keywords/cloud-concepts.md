@@ -19,9 +19,9 @@
 ## Availability Component
 | Concepts | Description |
 | --- | --- |
-| Availability Sets | Protection within a data center |
-| Availability Zones | Protection within a region |
-| Region Pairs | protection across a region | 
+| Availability Sets | Protection within a data centre |
+| Availability Zones | Protection within a region; one or more data centres |
+| Region Pairs | protection across a region; pairs are located 300 miles or more apart where possible | 
 | VM scale sets | IaaS resource service with built-in autoscaling features for VM-based workloads, identical VMs can be created through VM scale sets, which provides the automatic scaling functionality expected from a cloud model |
 
 ## Availbility Zone
