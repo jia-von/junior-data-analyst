@@ -26,6 +26,17 @@ I have finally passed my Exam AZ-900: Microsoft Azure Fundamentals with a score 
 | Azure Load Balancer | works with **network performance**, balance **traffic** within VMs, **global and regional apps** | Network-layer load balancer |
 | Azure Application Gateway | works with **web front ends**, **regional apps** | Application delivery controller as a service |
 | Azure Front Door | deliver real-time perfornace for **global apps** | Highly secure global application delivery |
+| Virtual Network (VNet) | IaaS resource and enables **communication with Azure resources** | Create your own private network infrastructure in the cloud |
+| Azure Virtual Network Manager | a central management service for your virtual network resources | Centrally manage virtual networks in Azure from a single pane of glass |
+
+### Virtual private network (VPN)
+| Product Name | Description |
+| --- | --- |
+| **VNet** | A VNet can only have one VPN gateway; the VPN gateway is a resource associated with only one VNet |
+| **Gateway subnet** | A dedicated subnet named GatewaySubnet is created within the VNet |
+| **Public IP address** | This resource is the public IP address that's used to connect to the on-premises VPN device (or another VNet's gateway) |
+| **Local network gateway** | This resource is used to represent your on-premises network location |
+| **Connection** | This resource creates a logical connection between the local network gateway and the VPN gateway |
 
 ## Databases
 | Product Name | Keywords | One-liner |
