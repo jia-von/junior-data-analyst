@@ -71,6 +71,12 @@ I have finally passed my Exam AZ-900: Microsoft Azure Fundamentals with a score 
 | Azure Logic Apps | serverless, workflow engine | Automate the access and use of data across clouds |
 | Azure App Service | A Microsoft-managed application hosting service | Quickly create powerful cloud apps for web and mobile |
 
+### Container 
+| Name | Figure |
+| --- | --- |
+| Container architecture: Containers build on top of the host operating system's kernel (which can be thought of as the buried plumbing of the operating system), and contain only apps and some lightweight operating system APIs and services that run in user mode, as shown in this diagram | ![container_concept_image](https://learn.microsoft.com/en-us/virtualization/windowscontainers/about/media/container-diagram.svg) |
+|  VMs run a complete operating system–including its own kernel–as shown in this diagram | ![virtual_machine_image](https://learn.microsoft.com/en-us/virtualization/windowscontainers/about/media/virtual-machine-diagram.svg) |
+
 ## Internet of Things
 | Product Name | Keywords | One-liner |
 | --- | --- | --- |
