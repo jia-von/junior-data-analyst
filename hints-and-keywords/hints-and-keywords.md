@@ -77,6 +77,10 @@ I have finally passed my Exam AZ-900: Microsoft Azure Fundamentals with a score 
 | Container architecture: Containers build on top of the host operating system's kernel (which can be thought of as the buried plumbing of the operating system), and contain only apps and some lightweight operating system APIs and services that run in user mode, as shown in this diagram | ![container_concept_image](https://learn.microsoft.com/en-us/virtualization/windowscontainers/about/media/container-diagram.svg) |
 |  VMs run a complete operating system–including its own kernel–as shown in this diagram | ![virtual_machine_image](https://learn.microsoft.com/en-us/virtualization/windowscontainers/about/media/virtual-machine-diagram.svg) |
 
+### Severless Decision Making Tree
+This diagram is provided by ['Anil' Radhakrishna](http://mvark.blogspot.com/2019/05/compared-azure-functions-logic-apps.html)
+![decision_making_tree](https://1.bp.blogspot.com/-7QGB_CBwQ00/XO0wIXE9ewI/AAAAAAAAFVk/CrqMh4NsHCMZ5dS_3xNYIjZCB7RqKwrrgCLcBGAs/s1600/3-service-choice-flow-diagram.png)
+
 ## Internet of Things
 | Product Name | Keywords | One-liner |
 | --- | --- | --- |
