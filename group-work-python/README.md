@@ -15,5 +15,6 @@ I worked on these files within Python virtual environment `venv` [module](https:
 - `creating_list_in_python.ipynb` and `python_list_slicing.ipynb`: Contains exercises related to [Python Lists](https://www.w3schools.com/python/python_lists.asp)
 - `python_dictionaries.ipynb`: Contains exercises related to [Python Dictionaries](https://www.w3schools.com/python/python_dictionaries.asp)
 - `python_tuple.ipynb`: Contains exercises related to [Python Tuples](https://www.w3schools.com/python/python_tuples.asp)
+- `python_sets.ipynb`: Contains exercises related to [Python Sets](https://www.w3schools.com/python/python_sets.asp)
 
 
