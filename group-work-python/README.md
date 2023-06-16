@@ -3,8 +3,7 @@ This exercise is based on JDA Python group exercise
 
 ## Prerequisite
 - Refer to [Installing Jupyter](https://jupyter.org/install)
-- Installing Jupyter using [Anaconda](https://www.anaconda.com/download)
-Alternatively,
+- Installing Jupyter using [Anaconda](https://www.anaconda.com/download), or alternatively;
 - Installing using [pip](https://pip.pypa.io/en/stable/), `pip install notebook`
   - Run Jupyter Notebook `jupyter notebook`
 - Python 3.10.6
