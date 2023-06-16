@@ -8,6 +8,7 @@ This repository contains study notes that I have collected myself over the cours
 - [hints-and-keywords](/hints-and-keywords/): My personal Azure AZ-900 study notes that I grabbed from multiple study materials
 - [practice-assessment-deck](/practice-assessment-deck/): Multiple choice flash cards made using [Anki App](https://apps.ankiweb.net)
 - [study-apps](/study-apps/blackboard-learning.md): Instructions to download [Blackboard Learning App](https://apps.apple.com/ca/app/blackboard-learn/id950424861) and [Coursera App](https://apps.apple.com/us/app/coursera-learn-career-skills/id736535961) so you can learn as you go, instead of sitting in front of a computer
+- [group-work-python](/group-work-python/README.md): An open repository that I share with my group so that we can collaborate together using [Jupyter Notebook](https://jupyter.org/install)
 
 ## References/Credits
 - [Exam AZ-900: Microsoft Azure Fundamentals](https://learn.microsoft.com/en-us/certifications/exams/az-900/)
