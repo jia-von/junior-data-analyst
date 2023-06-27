@@ -1,5 +1,6 @@
 # SQL Basics Activity
 This excercise are done using [DB Browser for SQLite ](https://sqlitebrowser.org/dl/)
+Thanks to [TableConvert](https://tableconvert.com/sql-to-markdown) turning my SQL statements into markdown table! <3
 
 ## Review the Book table and answer the following questions accordingly:
 ### Create database and import data using SQL:
@@ -34,7 +35,7 @@ Select * from Book where PurchaseCost >12;
 ```
 #### Output
 | BookISBN          | Status | Category     | PurchaseCost |
-|-------------------|--------|--------------|--------------|
+| ----------------- | ------ | ------------ | ------------ |
 | 978033195055014   | Out    | Crime        | 25.99        |
 | 97814002096298021 | Out    | Medical      | 12.99        |
 | 978055381762015   | In     | Travel       | 14           |
@@ -53,7 +54,7 @@ Select DISTINCT Category from Book;
 
 #### Output
 | Category     |
-|--------------|
+| ------------ |
 | Crime        |
 | Medical      |
 | Travel       |
@@ -69,7 +70,7 @@ SELECT * FROM Book WHERE Status = 'Out';
 
 #### Output
 | BookISBN          | Status | Category     | PurchaseCost |
-|-------------------|--------|--------------|--------------|
+| ----------------- | ------ | ------------ | ------------ |
 | 978033195055014   | Out    | Crime        | 25.99        |
 | 97814002096298021 | Out    | Medical      | 12.99        |
 | 978066295055012   | Out    | Cookery      | 18.99        |
@@ -86,7 +87,7 @@ SELECT * FROM Book LIMIT 3;
 
 #### Output
 | BookISBN          | Status | Category | PurchaseCost |
-|-------------------|--------|----------|--------------|
+| ----------------- | ------ | -------- | ------------ |
 | 978033195055014   | Out    | Crime    | 25.99        |
 | 97814002096298021 | Out    | Medical  | 12.99        |
 | 978055381762015   | In     | Travel   | 14           |
@@ -99,7 +100,7 @@ SELECT COUNT(*) FROM Book WHERE Category = "Travel";
 
 #### Output
 | COUNT |
-|-------|
+| ----- |
 | 3     |
 
 ### Write SQL statements to delete the books with ISBN of “978111995055024, 978026181762012”
@@ -109,7 +110,7 @@ DELETE FROM Book WHERE BookISBN in (978111995055024,978026181762012);
 
 #### Output 
 | BookISBN          | Status | Category     | PurchaseCost |
-|-------------------|--------|--------------|--------------|
+| ----------------- | ------ | ------------ | ------------ |
 | 978033195055014   | Out    | Crime        | 25.99        |
 | 97814002096298021 | Out    | Medical      | 12.99        |
 | 978055381762015   | In     | Travel       | 14           |
@@ -125,7 +126,7 @@ DELETE FROM Book WHERE BookISBN in (978111995055024,978026181762012);
 Firstly to create two tables: `movie_reviewer` and `movies`
 
 ### Create movie_reviewer table
-Set the `mov_id` as foreign key
+Set the `mov_id` as foreign key. After creating table, import the files as `.csv`
 ```SQL
 CREATE TABLE "movie_reviewer" (
 	"mov_id"	INTEGER,
@@ -138,7 +139,7 @@ CREATE TABLE "movie_reviewer" (
 ```
 #### Output
 | mov_id | rev_name           | rev_id | rev_stars | num_o_ratings |
-|--------|--------------------|--------|-----------|---------------|
+| ------ | ------------------ | ------ | --------- | ------------- |
 | 901    | Righty Sock        | 9001   | 8.4       | 263575        |
 | 902    | Jack Malvern       | 9002   | 7.9       | 20207         |
 | 903    | Flagrant Baronessa | 9003   | 8.3       | 202778        |
@@ -169,7 +170,7 @@ CREATE TABLE "movie_reviewer" (
 | 925    | Gene Shalit        | 9029   | 6.8       | 645273        |
 
 ### Create movies table
-Set the `mov_id` as primary key
+Set the `mov_id` as primary key. After creating table, import the files as `.csv`
 ```SQL
 CREATE TABLE "movies" (
 	"mov_id"	INTEGER,
@@ -184,7 +185,7 @@ CREATE TABLE "movies" (
 ```
 #### Output
 | mov_id | mov_name                 | mov_year | mov_time | mov_lang | mov_dt_rel | mov_rel_country |
-|--------|--------------------------|----------|----------|----------|------------|-----------------|
+| ------ | ------------------------ | -------- | -------- | -------- | ---------- | --------------- |
 | 901    | Vertigo                  | 1958     | 128      | English  | 1958-08-24 | UK              |
 | 902    | The Innocents            | 1961     | 100      | English  | 1962-02-19 | SW              |
 | 903    | Lawrence of Arabia       | 1962     | 216      | English  | 1962-12-11 | UK              |
@@ -220,7 +221,7 @@ SELECT mov_name,mov_year FROM movies;
 ```
 #### Output
 | mov_name                 | mov_year |
-|--------------------------|----------|
+| ------------------------ | -------- |
 | Vertigo                  | 1958     |
 | The Innocents            | 1961     |
 | Lawrence of Arabia       | 1962     |
@@ -249,3 +250,162 @@ SELECT mov_name,mov_year FROM movies;
 | Seven Samurai            | 1954     |
 | Spirited Away            | 2001     |
 | Back to the Future       | 1985     |
+
+### Write a query in SQL to find the year when the movie American Beauty released
+```SQL
+SELECT mov_year FROM movies WHERE mov_name = 'American Beauty';
+```
+#### Output
+| mov_year |
+| -------- |
+| 1999     |
+### Write a query in SQL to find the movie which was released in the year 1999
+```SQL
+SELECT mov_name FROM movies WHERE mov_year = 1999;
+```
+#### Output
+| mov_name        |
+| --------------- |
+| Eyes Wide Shut  |
+| American Beauty |
+### Write a query in SQL to find the movies which was released before 1998.
+```SQL
+SELECT mov_name FROM movies WHERE mov_year < 1998;
+```
+
+#### Output
+| mov_name                 |
+| ------------------------ |
+| Vertigo                  |
+| The Innocents            |
+| Lawrence of Arabia       |
+| The Deer Hunter          |
+| Amadeus                  |
+| Blade Runner             |
+| The Usual Suspects       |
+| Chinatown                |
+| Boogie Nights            |
+| Annie Hall               |
+| Princess Mononoke        |
+| The Shawshank Redemption |
+| Titanic                  |
+| Good Will Hunting        |
+| Deliverance              |
+| Trainspotting            |
+| Aliens                   |
+| Braveheart               |
+| Seven Samurai            |
+| Back to the Future       |
+### Write a query in SQL to return the name of all reviewers and name of movies together in a single list
+Reference: [SQLite Inner Join](https://www.sqlitetutorial.net/sqlite-inner-join/)
+```SQL
+SELECT movies.mov_name, movie_reviewer.rev_name
+FROM movie_reviewer
+INNER JOIN movies
+    ON movie_reviewer.mov_id = movies.mov_id;
+```
+#### Output
+| mov_name                 | rev_name           |
+|--------------------------|--------------------|
+| Vertigo                  | Righty Sock        |
+| The Innocents            | Jack Malvern       |
+| Lawrence of Arabia       | Flagrant Baronessa |
+| The Deer Hunter          | Alec Shaw          |
+| Amadeus                  | Francois Truffaut  |
+| Blade Runner             | Victor Woeltjen    |
+| Eyes Wide Shut           | Simon Wright       |
+| The Usual Suspects       | Neal Wruck         |
+| Chinatown                | Paul Monks         |
+| Boogie Nights            | Mike Salvati       |
+| Annie Hall               | Armond White       |
+| Princess Mononoke        | Wesley S. Walker   |
+| The Shawshank Redemption | Sasha Goldshtein   |
+| American Beauty          | Josh Cates         |
+| Titanic                  | Krug Stillo        |
+| Good Will Hunting        | Scott LeBrun       |
+| Deliverance              | Hannah Steele      |
+| Trainspotting            | Vincent Cadena     |
+| The Prestige             | Brandt Sponseller  |
+| Donnie Darko             | Richard Adams      |
+| Slumdog Millionaire      | Andre Bazin        |
+| Aliens                   | Judith Christ      |
+| Beyond the Sea           | Peter Travers      |
+| Avatar                   | Roger Ebert        |
+| Seven Samurai            | Pauline Kael       |
+| Spirited Away            | Leonard Martin     |
+| Back to the Future       | Andrew Sarris      |
+| Braveheart               | Gene Shalit        |
+### Write a query in SQL to find the name of all reviewers who have rated 7 or more stars to their rating.
+```SQL
+SELECT rev_name, rev_stars
+FROM movie_reviewer
+WHERE rev_stars >= 7;
+```
+#### Output
+| rev_name           | rev_stars |
+|--------------------|-----------|
+| Righty Sock        | 8.4       |
+| Jack Malvern       | 7.9       |
+| Flagrant Baronessa | 8.3       |
+| Alec Shaw          | 8.2       |
+| Francois Truffaut  | 7.3       |
+| Victor Woeltjen    | 8.6       |
+| Paul Monks         | 8.1       |
+| Mike Salvati       | 8.4       |
+| Armond White       | 7         |
+| Wesley S. Walker   | 7.7       |
+| Josh Cates         | 7.7       |
+| Scott LeBrun       | 8.1       |
+| Hannah Steele      | 8         |
+| Vincent Cadena     | 8.4       |
+| Richard Adams      | 7         |
+| Andre Bazin        | 7         |
+| Judith Christ      | 7         |
+
+### Write a query in SQL to find the titles of all movies that have no ratings.
+Reference: [SQLite IN](https://www.sqlitetutorial.net/sqlite-in/)
+```SQL
+SELECT 
+    movies.mov_name, movie_reviewer.num_o_ratings
+FROM 
+    movie_reviewer
+    INNER JOIN movies ON 
+        movies.mov_id = movie_reviewer.mov_id
+    WHERE 
+        movie_reviewer.num_o_ratings IS NULL;
+```
+#### Output
+| mov_name      | num_o_ratings |
+|---------------|---------------|
+| Amadeus       |               |
+| Boogie Nights |               |
+
+### Write a query in SQL to find the titles of the movies with ID 905, 907, 917
+```SQL
+SELECT mov_name FROM movies
+WHERE mov_id IN (905,907,917)
+```
+
+#### Output
+| mov_name       |
+|----------------|
+| Amadeus        |
+| Eyes Wide Shut |
+| Deliverance    |
+
+### Write a query in SQL to find the list of all those movies with year which include the words Boogie Nights
+References: [SQLite LIKE](https://www.sqlitetutorial.net/sqlite-like/)
+```SQL
+SELECT
+	mov_name,mov_year
+FROM
+	movies
+WHERE
+	mov_name LIKE '%Boogie Nights%';
+```
+#### Output
+| mov_name      | mov_year |
+|---------------|----------|
+| Boogie Nights | 1997     |
+
+
