@@ -1,12 +1,10 @@
 # SQL Basics Activity
-This excercise are done using [DB Browser for SQLite ](https://sqlitebrowser.org/dl/)
-Thanks to [TableConvert](https://tableconvert.com/sql-to-markdown) turning my SQL statements into markdown table! <3
+- This excercise are done using [DB Browser for SQLite ](https://sqlitebrowser.org)
+- Thanks to [TableConvert](https://tableconvert.com/sql-to-markdown) turning my SQL statements into markdown table!
 
 ## Review the Book table and answer the following questions accordingly:
 ### Create database and import data using SQL:
 ```SQL
--- Use this sql script to create table and import data--
-
 BEGIN TRANSACTION;
 CREATE TABLE IF NOT EXISTS "Book" (
 	"BookISBN"	INTEGER,
