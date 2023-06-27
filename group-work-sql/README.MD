@@ -216,7 +216,7 @@ CREATE TABLE "movies" (
 
 ### Write a query in SQL to find the name and year of the movies.
 ```SQL
-Write a query in SQL to find the name and year of the movies.
+SELECT mov_name,mov_year FROM movies;
 ```
 #### Output
 | mov_name                 | mov_year |
