@@ -3,28 +3,33 @@
 - Thanks to [TableConvert](https://tableconvert.com/sql-to-markdown) turning my SQL statements into markdown table!
 
 ## Review the Book table and answer the following questions accordingly:
+- Import the data into the the database. 
+- I was unable to change to strict data type, it seems SQLite uses flexible typing, which is quite interesting.
+- References  [Flexible Typing](https://www.sqlite.org/flextypegood.html)
+- I wasn't able to manipulate the datatype in the table as well even after creation
+- Due to current limited understanding of using `CAST` expressions even though. The importation results in these datatypes, refer to screen shot
+
+| Import CSV | Trying to change data type |
+| --- | --- |
+| ![screenshot2](/group-work-sql/img_asset/screenshot2.png) | ![screenshot1](/group-work-sql/img_asset/screenhot1.png) |
+
+### Flexible Typing Advocacy:
+
+> Details regarding the flexible type system of SQLite are found in the separate Datatypes In SQLite document. Here is a quick summary:
+> -  Datatype names on column definitions are optional. A column definition can consist of just the column name and nothing else.
+> - When datatype names are provided, they can be just about any text. SQLite attempts to deduce the preferred datatype for the column based on the datatype name in the column definition, but that preferred datatype is advisory, not mandatory. The preferred datatype is call the "column affinity".
+> - An attempt is made to transform incoming data into the preferred datatype of the column. (All SQL database engines do this, not just SQLite.) If this transformation is successful, all is well. But if unsuccessful, instead of raising an error, SQLite just stores the content using its original datatype. 
+
+
 ### Create database and import data using SQL:
+Import from `book.xslx` provided by NPower Canada
 ```SQL
-BEGIN TRANSACTION;
-CREATE TABLE IF NOT EXISTS "Book" (
-	"BookISBN"	INTEGER,
+CREATE TABLE "book" (
+	"BookISBN"	TEXT,
 	"Status"	TEXT,
 	"Category"	TEXT,
-	"PurchaseCost"	NUMERIC
-);
-INSERT INTO "Book" VALUES (978033195055014,'Out','Crime',25.99);
-INSERT INTO "Book" VALUES (97814002096298021,'Out','Medical',12.99);
-INSERT INTO "Book" VALUES (978055381762015,'In','Travel',14);
-INSERT INTO "Book" VALUES (978066295055012,'Out','Cookery',18.99);
-INSERT INTO "Book" VALUES (978112895055013,'Out','Crime',11.99);
-INSERT INTO "Book" VALUES (978041996298023,'Out','Architecture',35);
-INSERT INTO "Book" VALUES (97814002081762016,'In','Travel',17);
-INSERT INTO "Book" VALUES (978051896298012,'Out','Travel',9.99);
-INSERT INTO "Book" VALUES (978044796298026,'Out','Gardening',12.5);
-INSERT INTO "Book" VALUES (978039481762021,'In','Cookery',17.5);
-INSERT INTO "Book" VALUES (978111995055024,'In','Gardening',13.50);
-INSERT INTO "Book" VALUES (978026181762012,'Out','Astronomy',24.50);
-COMMIT;
+	"PurchaseCost"	INTEGER
+)
 ```
 
 ### What is the output of this query?
@@ -32,18 +37,18 @@ COMMIT;
 Select * from Book where PurchaseCost >12;
 ```
 #### Output
-| BookISBN          | Status | Category     | PurchaseCost |
-| ----------------- | ------ | ------------ | ------------ |
-| 978033195055014   | Out    | Crime        | 25.99        |
-| 97814002096298021 | Out    | Medical      | 12.99        |
-| 978055381762015   | In     | Travel       | 14           |
-| 978066295055012   | Out    | Cookery      | 18.99        |
-| 978041996298023   | Out    | Architecture | 35           |
-| 97814002081762016 | In     | Travel       | 17           |
-| 978044796298026   | Out    | Gardening    | 12.5         |
-| 978039481762021   | In     | Cookery      | 17.5         |
-| 978111995055024   | In     | Gardening    | 13.5         |
-| 978026181762012   | Out    | Astronomy    | 24.5         |
+| BookISBN               | Status | Category     | PurchaseCost |
+|------------------------|--------|--------------|--------------|
+| 978-0-331-95055-01-4   | Out    | Crime        | 25.99        |
+| 978-1-40020-96298-02-1 | Out    | Medical      | 12.99        |
+| 978-0-553-81762-01-5   | In     | Travel       | 14           |
+| 978-0-662-95055-01-2   | Out    | Cookery      | 18.99        |
+| 978-0-419-96298-02-3   | Out    | Architecture | 35           |
+| 978-1-40020-81762-01-6 | In     | Travel       | 17           |
+| 978-0-447-96298-02-6   | Out    | Gardening    | 12.5         |
+| 978-0-394-81762-02-1   | In     | Cookery      | 17.5         |
+| 978-1-119-95055-02-4   | In     | Gardening    | 13.5         |
+| 978-0-261-81762-01-2   | Out    | Astronomy    | 24.5         |
 
 ### What is the output of this query?
 ```SQL
@@ -65,18 +70,17 @@ Select DISTINCT Category from Book;
 ```SQL
 SELECT * FROM Book WHERE Status = 'Out';
 ```
-
 #### Output
-| BookISBN          | Status | Category     | PurchaseCost |
-| ----------------- | ------ | ------------ | ------------ |
-| 978033195055014   | Out    | Crime        | 25.99        |
-| 97814002096298021 | Out    | Medical      | 12.99        |
-| 978066295055012   | Out    | Cookery      | 18.99        |
-| 978112895055013   | Out    | Crime        | 11.99        |
-| 978041996298023   | Out    | Architecture | 35           |
-| 978051896298012   | Out    | Travel       | 9.99         |
-| 978044796298026   | Out    | Gardening    | 12.5         |
-| 978026181762012   | Out    | Astronomy    | 24.5         |
+| BookISBN               | Status | Category     | PurchaseCost |
+|------------------------|--------|--------------|--------------|
+| 978-0-331-95055-01-4   | Out    | Crime        | 25.99        |
+| 978-1-40020-96298-02-1 | Out    | Medical      | 12.99        |
+| 978-0-662-95055-01-2   | Out    | Cookery      | 18.99        |
+| 978-1-128-95055-01-3   | Out    | Crime        | 11.99        |
+| 978-0-419-96298-02-3   | Out    | Architecture | 35           |
+| 978-0-518-96298-01-2   | Out    | Travel       | 9.99         |
+| 978-0-447-96298-02-6   | Out    | Gardening    | 12.5         |
+| 978-0-261-81762-01-2   | Out    | Astronomy    | 24.5         |
 
 ### Write SQL statement to retrieve only the first 3 rows from book.
 ```SQL
@@ -84,12 +88,11 @@ SELECT * FROM Book LIMIT 3;
 ```
 
 #### Output
-| BookISBN          | Status | Category | PurchaseCost |
-| ----------------- | ------ | -------- | ------------ |
-| 978033195055014   | Out    | Crime    | 25.99        |
-| 97814002096298021 | Out    | Medical  | 12.99        |
-| 978055381762015   | In     | Travel   | 14           |
-
+| BookISBN               | Status | Category | PurchaseCost |
+|------------------------|--------|----------|--------------|
+| 978-0-331-95055-01-4   | Out    | Crime    | 25.99        |
+| 978-1-40020-96298-02-1 | Out    | Medical  | 12.99        |
+| 978-0-553-81762-01-5   | In     | Travel   | 14           |
 
 ### Write a SQL statement to count all books where the Category equals Travel.
 ```SQL
@@ -101,24 +104,24 @@ SELECT COUNT(*) FROM Book WHERE Category = "Travel";
 | ----- |
 | 3     |
 
-### Write SQL statements to delete the books with ISBN of “978111995055024, 978026181762012”
+### Write SQL statements to delete the books with ISBN of "978-1-119-95055-02-4","978-0-261-81762-01-2"
 ```SQL
-DELETE FROM Book WHERE BookISBN in (978111995055024,978026181762012);
+DELETE FROM Book WHERE BookISBN in ("978-1-119-95055-02-4","978-0-261-81762-01-2");
 ```
 
 #### Output 
-| BookISBN          | Status | Category     | PurchaseCost |
-| ----------------- | ------ | ------------ | ------------ |
-| 978033195055014   | Out    | Crime        | 25.99        |
-| 97814002096298021 | Out    | Medical      | 12.99        |
-| 978055381762015   | In     | Travel       | 14           |
-| 978066295055012   | Out    | Cookery      | 18.99        |
-| 978112895055013   | Out    | Crime        | 11.99        |
-| 978041996298023   | Out    | Architecture | 35           |
-| 97814002081762016 | In     | Travel       | 17           |
-| 978051896298012   | Out    | Travel       | 9.99         |
-| 978044796298026   | Out    | Gardening    | 12.5         |
-| 978039481762021   | In     | Cookery      | 17.5         |
+| BookISBN               | Status | Category     | PurchaseCost |
+|------------------------|--------|--------------|--------------|
+| 978-0-331-95055-01-4   | Out    | Crime        | 25.99        |
+| 978-1-40020-96298-02-1 | Out    | Medical      | 12.99        |
+| 978-0-553-81762-01-5   | In     | Travel       | 14           |
+| 978-0-662-95055-01-2   | Out    | Cookery      | 18.99        |
+| 978-1-128-95055-01-3   | Out    | Crime        | 11.99        |
+| 978-0-419-96298-02-3   | Out    | Architecture | 35           |
+| 978-1-40020-81762-01-6 | In     | Travel       | 17           |
+| 978-0-518-96298-01-2   | Out    | Travel       | 9.99         |
+| 978-0-447-96298-02-6   | Out    | Gardening    | 12.5         |
+| 978-0-394-81762-02-1   | In     | Cookery      | 17.5         |
 
 ## Practicing with Movies using Where Clause
 Firstly to create two tables: `movie_reviewer` and `movies`
