@@ -26,15 +26,15 @@ ON CENSUS_DATA.COMMUNITY_AREA_NUMBER = CHICAGO_CRIME_DATA.COMMUNITY_AREA_NUMBER
 WHERE CHICAGO_CRIME_DATA.LOCATION_DESCRIPTION LIKE '%SCHOOL%'
 ```
 ### Output 
-| CASE_NUMBER | PRIMARY_TYPE      | DESCRIPTION                    | LOCATION_DESCRIPTION | COMMUNITY_AREA_NAME |
-|-------------|-------------------|--------------------------------|----------------------|---------------------|
-| HL353697    | BATTERY           | SIMPLE                         | SCHOOL               | PUBLIC              | GROUNDS  | South Shore        |
-| HL725506    | BATTERY           | PRO EMP HANDS NO/MIN INJURY    | SCHOOL               | PUBLIC              | BUILDING | Lincoln Square     |
-| HP716225    | BATTERY           | SIMPLE                         | SCHOOL               | PUBLIC              | BUILDING | Douglas            |
-| HH639427    | BATTERY           | SIMPLE                         | SCHOOL               | PUBLIC              | BUILDING | Austin             |
-| JA460432    | BATTERY           | SIMPLE                         | SCHOOL               | PUBLIC              | GROUNDS  | Ashburn            |
-| HS200939    | CRIMINAL DAMAGE   | TO VEHICLE                     | SCHOOL               | PUBLIC              | GROUNDS  | Austin             |
-| HK577020    | NARCOTICS         | POSS: HEROIN(WHITE)            | SCHOOL               | PUBLIC              | GROUNDS  | Rogers Park        |
-| HS305355    | NARCOTICS         | MANU/DEL:CANNABIS 10GM OR LESS | SCHOOL               | PUBLIC              | BUILDING | Brighton Park      |
-| HT315369    | ASSAULT           | PRO EMP HANDS NO/MIN INJURY    | SCHOOL               | PUBLIC              | GROUNDS  | East Garfield Park |
-| HR585012    | CRIMINAL TRESPASS | TO LAND                        | SCHOOL               | PUBLIC              | GROUNDS  | Ashburn            |
+| CASE_NUMBER | PRIMARY_TYPE      | DESCRIPTION                    | LOCATION_DESCRIPTION   | COMMUNITY_AREA_NAME |
+|-------------|-------------------|--------------------------------|------------------------|---------------------|
+| HL353697    | BATTERY           | SIMPLE                         | SCHOOL PUBLIC GROUNDS  | South Shore         |
+| HL725506    | BATTERY           | PRO EMP HANDS NO/MIN INJURY    | SCHOOL PUBLIC BUILDING | Lincoln Square      |
+| HP716225    | BATTERY           | SIMPLE                         | SCHOOL PUBLIC BUILDING | Douglas             |
+| HH639427    | BATTERY           | SIMPLE                         | SCHOOL PUBLIC BUILDING | Austin              |
+| JA460432    | BATTERY           | SIMPLE                         | SCHOOL PUBLIC GROUNDS  | Ashburn             |
+| HS200939    | CRIMINAL DAMAGE   | TO VEHICLE                     | SCHOOL PUBLIC GROUNDS  | Austin              |
+| HK577020    | NARCOTICS         | POSS: HEROIN(WHITE)            | SCHOOL PUBLIC GROUNDS  | Rogers Park         |
+| HS305355    | NARCOTICS         | MANU/DEL:CANNABIS 10GM OR LESS | SCHOOL PUBLIC BUILDING | Brighton Park       |
+| HT315369    | ASSAULT           | PRO EMP HANDS NO/MIN INJURY    | SCHOOL PUBLIC GROUNDS  | East Garfield Park  |
+| HR585012    | CRIMINAL TRESPASS | TO LAND                        | SCHOOL PUBLIC GROUNDS  | Ashburn             |
