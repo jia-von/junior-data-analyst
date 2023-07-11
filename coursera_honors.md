@@ -85,7 +85,7 @@ END
 ```
 ## Exercise 3, Question 2:
 Inside your stored procedure, write a SQL statement to update the `Leaders_Score` in `CHICAGO_PUBLIC_SCHOOLS` table for the school indentified by `in_School_ID` to the value in the `in_Leader_Score` parameter.
-- Reference: [SQL Cheat Sheet: Views, Stored Procedures and Transactions
+- Reference: SQL Cheat Sheet: Views, Stored Procedures and Transactions
 ```SQL
 --#SET TERMINATOR @
 CREATE PROCEDURE UPDATE_LEADERS_SCORE (
