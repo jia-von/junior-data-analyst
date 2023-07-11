@@ -38,3 +38,68 @@ WHERE CHICAGO_CRIME_DATA.LOCATION_DESCRIPTION LIKE '%SCHOOL%'
 | HS305355    | NARCOTICS         | MANU/DEL:CANNABIS 10GM OR LESS | SCHOOL PUBLIC BUILDING | Brighton Park       |
 | HT315369    | ASSAULT           | PRO EMP HANDS NO/MIN INJURY    | SCHOOL PUBLIC GROUNDS  | East Garfield Park  |
 | HR585012    | CRIMINAL TRESPASS | TO LAND                        | SCHOOL PUBLIC GROUNDS  | Ashburn             |
+## Exercise 2, Question 1
+Write and execute a SQL statement that returns just the school name and leaders' icon from the view
+```SQL
+CREATE VIEW School_Icon
+AS
+	SELECT
+		NAME_OF_SCHOOL AS "Name",
+		Leaders_Icon AS "Icon"
+		FROM CHICAGO_PUBLIC_SCHOOLS;
+
+SELECT * FROM School_Icon;
+```
+### Output
+| Name                                                              | Icon |
+|-------------------------------------------------------------------|------|
+| Abraham Lincoln Elementary School                                 | Weak |
+| Adam Clayton Powell Paideia Community Academy Elementary School   | Weak |
+| Adlai E Stevenson Elementary School                               | Weak |
+| Agustin Lara Elementary Academy                                   | Weak |
+| Air Force Academy High School                                     | Weak |
+| Albany Park Multicultural Academy                                 | Weak |
+| Albert G Lane Technical High School                               | Weak |
+| Albert R Sabin Elementary Magnet School                           | Weak |
+| Alcott High School for the Humanities                             | Weak |
+| Alessandro Volta Elementary School                                | Weak |
+| Alexander Graham Bell Elementary School                           | Weak |
+| Alexander Graham Elementary School                                | Weak |
+.....
+## Exercise 3, Question 1:
+Write the structure of a query to create or replace a stored procedure called `UPDATE_LEADERS_SCORE` that takes a `in_School_ID` parameter as an integer and a `in_Leader_Score` parameter as an integer. Don't forget to use the `#SET TERMINATOR` statement to use the `@` for the `CREATE` statement terminator
+```SQL
+--#SET TERMINATOR @
+CREATE PROCEDURE UPDATE_LEADERS_SCORE (
+    IN in_School_ID INTEGER, 
+    IN in_Leader_Score INTEGER
+    )
+  
+LANGUAGE SQL
+MODIFIES SQL DATA
+
+BEGIN
+
+END 
+@
+```
+## Exercise 3, Question 2:
+Inside your stored procedure, write a SQL statement to update the `Leaders_Score` in `CHICAGO_PUBLIC_SCHOOLS` table for the school indentified by `in_School_ID` to the value in the `in_Leader_Score` parameter.
+```SQL
+--#SET TERMINATOR @
+CREATE PROCEDURE UPDATE_LEADERS_SCORE (
+    IN in_School_ID INTEGER, 
+    IN in_Leader_Score INTEGER
+    )
+  
+LANGUAGE SQL
+MODIFIES SQL DATA
+
+BEGIN
+	UPDATE DVY37834.CHICAGO_PUBLIC_SCHOOLS
+	SET LEADERS_SCORE = in_Leader_Score
+	WHERE SCHOOL_ID = in_School_ID;
+END 
+@
+```
+
