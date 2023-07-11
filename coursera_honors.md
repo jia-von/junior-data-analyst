@@ -85,6 +85,7 @@ END
 ```
 ## Exercise 3, Question 2:
 Inside your stored procedure, write a SQL statement to update the `Leaders_Score` in `CHICAGO_PUBLIC_SCHOOLS` table for the school indentified by `in_School_ID` to the value in the `in_Leader_Score` parameter.
+- Reference: [SQL Cheat Sheet: Views, Stored Procedures and Transactions
 ```SQL
 --#SET TERMINATOR @
 CREATE PROCEDURE UPDATE_LEADERS_SCORE (
@@ -102,4 +103,12 @@ BEGIN
 END 
 @
 ```
-
+## Exercise 3, Question 3:
+Inside your stored procedure, write a SQL `IF` statement to update the `Leaders_Icon` field in the `CHICAGO_PUBLIC_SCHOOLS` table for the school identified by `in_School_ID` using the following information.
+| Score lower limit | Score upper limit | Icon |
+| --- | --- | --- |
+| 80 | 99 | Very strong |
+| 60 | 79 | Strong |
+| 40 | 59 | Average |
+| 20 | 39 | Weak |
+| 0 | 19 | Very weak |
