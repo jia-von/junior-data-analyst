@@ -117,7 +117,7 @@ Inside your stored procedure, write a SQL `IF` statement to update the `Leaders_
 - Reference: https://www.ibm.com/docs/en/db2/11.5?topic=commands-reorg-table-command-using-admin-cmd
 
 ```SQL
--#SET TERMINATOR @
+--#SET TERMINATOR @
 CREATE PROCEDURE UPDATE_LEADERS_SCORE (
     IN in_School_ID INTEGER, 
     IN in_Leader_Score INTEGER
@@ -153,4 +153,44 @@ END
 @
 ```
 
-###
+### Rollback and Commits within SQL Stored Procedure
+```SQL
+--#SET TERMINATOR @
+CREATE PROCEDURE UPDATE_LEADERS_SCORE (
+    IN in_School_ID INTEGER, 
+    IN in_Leader_Score INTEGER
+    )
+  
+LANGUAGE SQL
+MODIFIES SQL DATA
+
+BEGIN
+	CALL SYSPROC.ADMIN_CMD('REORG TABLE CHICAGO_PUBLIC_SCHOOLS');
+		IF in_Leader_Score BETWEEN 80 AND 99 THEN
+			UPDATE DVY37834.CHICAGO_PUBLIC_SCHOOLS 
+			SET LEADERS_SCORE = in_Leader_Score, LEADERS_ICON = 'Very Strong'
+			WHERE SCHOOL_ID = in_School_ID;
+		ELSEIF in_Leader_Score BETWEEN 60 AND 79 THEN
+			UPDATE DVY37834.CHICAGO_PUBLIC_SCHOOLS 
+			SET LEADERS_SCORE = in_Leader_Score, LEADERS_ICON = 'Strong'
+			WHERE SCHOOL_ID = in_School_ID;
+		ELSEIF in_Leader_Score BETWEEN 40 AND 59 THEN
+			UPDATE DVY37834.CHICAGO_PUBLIC_SCHOOLS 
+			SET LEADERS_SCORE = in_Leader_Score, LEADERS_ICON = 'Average'
+			WHERE SCHOOL_ID = in_School_ID;		
+		ELSEIF in_Leader_Score BETWEEN 20 AND 39 THEN
+			UPDATE DVY37834.CHICAGO_PUBLIC_SCHOOLS 
+			SET LEADERS_SCORE = in_Leader_Score, LEADERS_ICON = 'Weak'
+			WHERE SCHOOL_ID = in_School_ID;	
+		ELSEIF in_Leader_Score BETWEEN 0 AND 19 THEN
+			UPDATE DVY37834.CHICAGO_PUBLIC_SCHOOLS 
+			SET LEADERS_SCORE = in_Leader_Score, LEADERS_ICON = 'Very Weak'
+			WHERE SCHOOL_ID = in_School_ID;	
+		ELSEIF in_Leader_Score < 0 THEN
+			ROLLBACK WORK;
+		ELSE 
+			COMMIT WORK;
+		END IF;
+END
+@
+```
